@@ -62,6 +62,9 @@ while True:
     except ValueError:
         print("Please insert a valid price format 00.00")
         continue
-    break
-
-change_optimized(str(product), str(payment))
+    
+    change_optimized(str(product), str(payment))
+    
+    close = input("Want to close the script? y or n: ")
+    if (close == 'y'):
+        break
